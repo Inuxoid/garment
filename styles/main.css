@@ -15,7 +15,7 @@ html::-webkit-scrollbar {
 
 .header {
   color: #ffffff;
-  background: rgb(15, 0, 0) url("../../resources/img/1920/header.png");
+  background: rgb(15, 0, 0) url("../resources/img/1920/header.png");
   display: flex;
   flex-direction: column;
   align-items: center;
