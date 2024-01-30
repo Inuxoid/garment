@@ -18,19 +18,19 @@
   }
 
   @include for-mini-mobile{
-    width: 100%;
+    width: 80%;
     justify-content: center;
   }
 }
 
 .footer .credits{
   @include for-mobile {
-    width: 400px;
+    width: 375px;
     flex-direction: column;
   }
 
   @include for-mini-mobile{
-    width: 400px;
+    width: 80%;
     flex-direction: column;
   }
 }

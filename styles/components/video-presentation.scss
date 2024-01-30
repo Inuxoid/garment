@@ -20,6 +20,11 @@
   @include for-mobile{
     width: 540px;
   }
+
+  @include for-mini-mobile{
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .double-block__video-head{
