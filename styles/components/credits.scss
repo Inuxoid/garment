@@ -1,0 +1,150 @@
+.credits{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-top: 30px;
+
+  @include for-desktop{
+    width: 1130px;
+  }
+
+  @include for-tablet{
+    width: 1130px;
+  }
+
+  @include for-mobile{
+    width: 560px;
+    justify-content: center;
+  }
+
+  @include for-mini-mobile{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.footer .credits{
+  @include for-mobile {
+    width: 400px;
+    flex-direction: column;
+  }
+
+  @include for-mini-mobile{
+    width: 400px;
+    flex-direction: column;
+  }
+}
+
+.credits__phone{
+  @include for-mobile{
+    position: absolute;
+    padding-top: 550px;
+    margin-right: 250px;
+  }
+
+  @include for-mini-mobile{
+    position: absolute;
+    padding-top: 550px;
+    margin-right: 250px;
+  }
+}
+
+.footer .credits__phone{
+  position: relative;
+  padding-top: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.credits__phone-number{
+  font-family: nth($font-stack, 2), sans-serif;
+  font-size: 14px;
+}
+
+.credits__phone-text{
+  font-family: nth($font-stack, 3), sans-serif;
+  font-size: 14px;
+}
+
+.credits__name{
+  text-align: left;
+  align-self: center;
+  padding-left: 50px;
+
+  @include for-mobile{
+    padding-left: 0;
+  }
+
+  @include for-mini-mobile{
+    padding-left: 0;
+  }
+}
+
+.footer .credits__name{
+  @include for-mobile {
+    order: -1;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  @include for-mini-mobile{
+    order: -1;
+    padding-bottom: 10px;
+    text-align: left;
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+
+.credits__name-top{
+  font-family: nth($font-stack, 2), sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.credits__name-bottom{
+  font-family: nth($font-stack, 1), sans-serif;;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.credits__mail{
+  @include for-mobile{
+    position: absolute;
+    padding-top: 550px;
+    margin-left: 250px;
+  }
+
+  @include for-mini-mobile{
+    position: absolute;
+    padding-top: 550px;
+    margin-left: 250px;
+  }
+}
+
+.footer .credits__mail{
+  @include for-mobile{
+    position: relative;
+    padding-top: 30px;
+    margin: 0;
+  }
+
+  @include for-mini-mobile{
+    position: relative;
+    padding-top: 30px;
+    margin: 0;
+  }
+}
+
+.credits__mail-top{
+  font-family: nth($font-stack, 2), sans-serif;
+  font-size: 14px;
+}
+
+.credits__mail-bottom{
+  font-family: nth($font-stack, 3), sans-serif;;
+  font-size: 14px;
+}

@@ -1,0 +1,130 @@
+.double-block__addresses{
+  display: flex;
+  justify-content: center;
+
+  @include for-desktop{
+    transform: translateY(100px);
+    margin-bottom: -532px;
+  }
+
+  @include for-tablet{
+    transform: translateY(100px);
+    margin-bottom: -532px;
+  }
+
+  @include for-mobile{
+    transform: translateY(137px);
+    margin-bottom: -780px;
+  }
+
+  @include for-mini-mobile{
+    transform: translateY(110px);
+    margin-bottom: -828px;
+  }
+}
+
+.double-block__addresses-img--top{
+  background-image: url("../resources/img/1920/addresses/rect.png");
+
+  @include for-desktop{
+    width: 1125px;
+    height: 825px;
+  }
+
+  @include for-tablet{
+    width: 1125px;
+    height: 825px;
+  }
+
+  @include for-mobile{
+    width: 540px;
+    height: 1220px;
+  }
+
+  @include for-mini-mobile{
+    width: 400px;
+    height: 1220px;
+  }
+}
+
+.double-block__addresses-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include for-desktop{
+    flex-direction: row;
+  }
+
+  @include for-tablet{
+    flex-direction: row;
+  }
+
+  @include for-mobile{
+    flex-direction: column;
+  }
+
+  @include for-mini-mobile{
+    flex-direction: column;
+  }
+}
+
+.double-block__addresses-img{
+  display: flex;
+}
+
+.double-block__addresses-img--left{
+  background-image: url("../resources/img/1920/addresses/lig.png");
+
+  @include for-desktop{
+    width: 563px;
+    height: 472px;
+  }
+
+  @include for-tablet{
+    width: 563px;
+    height: 472px;
+  }
+
+  @include for-mobile{
+    width: 540px;
+    height: 472px;
+  }
+
+  @include for-mini-mobile{
+    width: 400px;
+    height: 472px;
+  }
+}
+
+.double-block__addresses-img--right{
+  background-image: url("../resources/img/1920/addresses/petr.png");
+
+  @include for-desktop{
+    width: 563px;
+    height: 472px;
+  }
+
+  @include for-tablet{
+    width: 563px;
+    height: 472px;
+  }
+
+  @include for-mobile{
+    width: 540px;
+    height: 472px;
+  }
+
+  @include for-mini-mobile{
+    width: 400px;
+    height: 472px;
+  }
+}
+
+.double-block__address-text{
+  font-family: nth($font-stack, 2), sans-serif;
+  font-size: 24px;
+  text-align: left;
+  margin: 20px;
+  align-self: flex-end;
+}

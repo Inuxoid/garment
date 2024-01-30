@@ -1,0 +1,63 @@
+.double-block__print-methods-grid{
+  display: grid;
+  @include for-desktop{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-tablet{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.double-block__print-methods-element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.double-block__printing-img{
+  @include for-desktop{
+    width: 540px;
+    height: 315px;
+  }
+
+  @include for-tablet{
+    width: 540px;
+    height: 315px;
+  }
+
+  @include for-mobile{
+    width: 400px;
+    height: 230px;
+  }
+
+  @include for-mini-mobile{
+    width: 360px;
+    height: 200px;
+  }
+}
+
+.double-block__printing-head{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: nth($font-stack, 2), sans-serif;
+}
+
+.double-block__printing-description{
+  font-size: 16px;
+  text-align: center;
+  font-family: nth($font-stack, 3), sans-serif;
+  padding-bottom: 50px;
+
+  @include for-mini-mobile{
+    width: 80%;
+  }
+}

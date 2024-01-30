@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для Internet Explorer 10+ и Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Для WebKit браузеров, таких как Safari и Chrome */
+}

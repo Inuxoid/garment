@@ -1,0 +1,52 @@
+.double-block__influences-grid{
+  display: grid;
+
+  @include for-desktop{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include for-tablet{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include for-mobile{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-mini-mobile{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.double-block__influences{
+  margin: 15px;
+
+  @include for-desktop{
+    width: 350px;
+    height: 350px;
+  }
+
+  @include for-tablet{
+    width: 350px;
+    height: 350px;
+  }
+
+  @include for-mobile{
+    width: 250px;
+    height: 250px;
+  }
+
+  @include for-mini-mobile{
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding-top: 20px;
+  }
+}
+
+.double-block__influence4{
+  @include for-mobile{
+    display: none;
+  }
+}
